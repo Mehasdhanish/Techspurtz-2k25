@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0a0f2c;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #00bfff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002147;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #00bfff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(120deg, #001f3f, #0077b6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hero h3 {
+    margin-top: 10px;
+    color: #dcdcdc;
+}
+
+#countdown {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    font-size: 1.2rem;
+}
+
+#countdown span {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* SCHEDULE & VENUE */
+#schedule, #venue {
+    background: #0a0f2c;
+}
+
+#schedule ul, #venue ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#schedule li, #venue li {
+    background: #112b53;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    color: #e0e0e0;
+}
+
+/* REGISTRATION & CONTACT */
+#registration-contact {
+    background: linear-gradient(120deg, #004b7f, #001f3f);
+}
+
+#registration-contact p {
+    margin: 8px 0;
+    color: #dcdcdc;
+}
+
+/* FOOTER */
+footer {
+    background: #081229;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #schedule li, #venue li {
+        width: 95%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
